@@ -1,8 +1,8 @@
 {
-  "name": "opennlp",
-  "version": "2.0.2",
-  "description": "Apache OpenNLP wrapper for Node.",
-  "main": "opennlp.js",
+  "name": "node-opennlp",
+  "version": "0.0.1",
+  "description": "Fork of opennlp, Apache OpenNLP wrapper for Node.",
+  "main": "index.js",
   "keywords": [
     "java",
     "opennlp",
@@ -18,15 +18,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mbejda/Node-OpenNLP.git"
+    "url": "https://github.com/bogas04/Node-OpenNLP.git"
   },
   "bugs": {
-    "url": "https://github.com/mbejda/Node-OpenNLP/issues"
+    "url": "https://github.com/bogas04/Node-OpenNLP/issues"
   },
-  "author": "Milos Bejda <mbejda@live.com> (mbejda.com)",
-  "license": "The MIT License (MIT)",
+  "author": "bogas04",
+  "license": "MIT",
   "dependencies": {
-    "extendy": "1.0.1",
+    "extendy": "^1.0.1",
     "java": "^0.8.0"
   },
   "devDependencies": {

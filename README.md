@@ -1,16 +1,17 @@
+# node-opennlp
 
-NodeJs OpenNLP
-===============
-[![NPM](https://travis-ci.org/mbejda/Node-OpenNLP.svg?branch=master)](https://nodei.co/npm/opennlp/)
+NOTE: This project is a fork of [Node-OpenNLP](https://github.com/mbejda/Node-OpenNLP) by [@mbejda](https://github.com/mbejda/). The fork was created to fix version related errors and to migrate it to modern ECMAScript syntax.
 
-# Node OpenNLP - (OpenNLP 1.6.0)
-## OpenNLP Wrapper For Node.js
-Node-OpenNLP is depended on `Node-Java`. Please take make sure your environment is properly configured to run `Node-Java`.  Click [here](https://github.com/joeferner/node-java) to learn more about `Node-Java`.
+# OpenNLP 1.6.0 Wrapper For Node.js
+
+`node-opennlp` relies on `java` npm module, and interfaces with Apache-OpenNLP using that.
 
 ### Installation
+
+```bash
+npm install node-opennlp --save
 ```
- npm install opennlp --save
-```
+
 Node-OpenNLP comes with **Apache OpenNLP 1.6.0** along with the following trained 1.5 series models:
 
  * en-chunker.bin
@@ -19,8 +20,7 @@ Node-OpenNLP comes with **Apache OpenNLP 1.6.0** along with the following traine
  * en-sent.bin
  * en-token.bin
 
-More trained models can be found here:
-http://opennlp.sourceforge.net/models-1.5
+More trained models can be found [here](http://opennlp.sourceforge.net/models-1.5)
 
 ### Sentence Detector
 The OpenNLP Sentence Detector can detect that a punctuation character marks the end of a sentence or not. In this sense a sentence is defined as the longest white space trimmed character sequence between two punctuation marks.
@@ -149,13 +149,4 @@ posTagger.tag(sentence, function(err, tokens_arr) {
     });
 });
 ```
-<hr>
-Please report any bugs. Feel free to send me a tweet if you need any help.
-<hr>
-Follow me on Twitter
-[@notmilobejda](https://twitter.com/notmilobejda)<br>
-My Blog
-[mbejda.com](https://mbejda.com)<br>
-
-[![Support via Gratipay](https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.svg)](https://gratipay.com/mbejda/)
-[![NPM](https://nodei.co/npm/opennlp.png)](https://nodei.co/npm/opennlp/)
+[![NPM](https://nodei.co/npm/node-opennlp.png)](https://nodei.co/npm/node-opennlp/)
