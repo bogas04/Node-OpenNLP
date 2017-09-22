@@ -48,6 +48,10 @@ var openNLP = function(config) {
 					}.bind(null, sentence));
 				}
 				var nameFinder = function(error, sentenceTokens, cb) {
+					if (error) {
+						console.log(error);
+						throw new Error('Error in loading name-finder model');
+					}
 					self.nameFinder(function(sentenceTokens, error, instance) {
 						that.instance = instance;
 						var newArray = self.java.newArray("java.lang.String", sentenceTokens);
@@ -61,7 +65,7 @@ var openNLP = function(config) {
 						nameFinder(error, sentenceTokens, cb)
 					});
 				} else {
-					nameFinder(error, sentence, cb)
+					nameFinder(null, sentence, cb)
 				}
 			},
 			probs: function(cb) {
